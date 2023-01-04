@@ -1,13 +1,13 @@
-## Primeira Semana​ :rocket: ##
+## First Week​ :rocket: ##
 
 
 
-Aqui estão alguns programas simples que desenvolvi no início de meu aprendizado em python:
+Here are some simple programs that I developed at the beginning of my learning of Python:
 
 
 
-- **dezenas** - O programa encontra a dezena de qualquer número inteiro digitado;
-- **fatura** - Este se trata de um treino de input e output, simulando uma consulta de faturamento; 
-- **médias** - Calcula a média aritmética de quatro notas digitadas pelo usuário;
-- **quadrado** - Retorna o perímetro e a área de um quadrado a partir da entrada da medida de seu lado;
-- **segundos** - Converte segundos em dias, horas e minutos.
+- **Tens** - Finds the tens of any input integer;
+- **Billing** - Practice of input and output, simulating a consultation of a payment bill; 
+- **Average** - Calculates the arithmetic average of four input grades;
+- **Square** - Returns the perimeter and the area of a square, utilizing the input of its side measure;
+- **Seconds** - Converts seconds into days, hours, and minutes.

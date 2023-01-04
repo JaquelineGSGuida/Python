@@ -1,16 +1,16 @@
-## Segunda Semana​ :rocket: ##
+## Second Week​ :rocket: ##
 
 
 
-Desta vez estudo, principalmente, desvios condicionais.
+This parcel is mainly a study of conditional deviations.
 
 
 
-- **bhaskara** - A partir de três variáveis digitadas, calcula a formula de bhaskara, informando quais são as raízes ou se não possui raízes reais;
-- **buzz** - Se o número digitado for divisível por 5, o programa retorna a palavra _Buzz_. Caso contrário, o output é o próprio número; 
-- **fizz** - Se o número digitado for divisível por 3, o programa retorna a palavra _Fizz_. Caso contrário, o output é o próprio número;
-- **fizzbuzz** - Se o número digitado for divisível por 3 **e** por 5, o programa retorna a palavra _Fizz_. Caso contrário, o output é o próprio número;
-- **ordenação** - A partir da entrada de três números, o programa indica se estão em ordem crescente;
-- **paridade** - Informa se o numero digitado é par ou ímpar;
-- **pontos** - Utiliza a localização de dois pontos num plano cartesiano para definir se estão distantes ou não.
+- **Bhaskara** - From three input variables, utilizes Bhaskara’s formula to calculate the roots. Informing what they are or if they are not real numbers;
+- **Buzz** - If the input number is divisible by 5, it returns the word “Buzz”. If it is not, the output is the number itself; 
+- **Fizz** - If the input number is divisible by 5, it returns the word “Buzz”. If it is not, the output is the number itself;
+- **Fizzbuzz** - If the input number is divisible by 3 and 5, it returns the word “Fizzbuzz”. If it is not, the output is the number itself;
+- **Ordination** - From the input of three numbers, indicates if they are in crescent order;
+- **Parity** - Indicates if the input number is even or odd;
+- **Vertices** - Utilizes the input localization of two cartesian plane vertices to determine whether they are distant.
 

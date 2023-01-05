@@ -1,18 +1,18 @@
-## Quinta Semana​ :rocket: ##
+## Fifth Week​ :rocket: ##
 
 
 
-Este projeto é um pouco mais complexo (e extenso) que os anteriores. Se trata de um jogo chamado **NIM**. 
+This Project is more complex and more extensive than the previous ones. It is about a game called **NIM**. 
 
-O NIM original é jogado entre dois participantes presencialmente, com _n_ peças sobre uma mesa ou tabuleiro. As regras são:
+The original NIM is played between two players in person, with n pieces on a table or a board. The rules are:
 
--  Os dois jogadores se alternam para jogar;
+- The players alternate turns;
 
-- A cada jogada o participante deve retirar de uma a _m_ peças, sendo _m_ definido em acordo por ambos;
+- In each turn, the player must take out one to m pieces, being m defined in an agreement;
 
-- Ganha quem tirar do jogo as últimas peças.
+- The one who takes out the last pieces wins the game.
 
   
 
-A ideia desse projeto é simular três partidas seguidas entre jogador e computador. Entretanto, foi utilizada uma estratégia para que o computador sempre ganhe: Com _n_ (número de peças do jogo) e _m_ (máximo de peças a ser retirado por jogada) definidos pelo jogador, o computador define quem começa. Além disso o computador, quando possível, retira o número de peças exato para deixar múltiplos de (_m_+1). 
+The project aims to simulate three sequential games between the player and a computer. However, it used a strategy that guarantees that the computer always wins: With n (number of game pieces) and m (maximum of pieces to be taken out per turn) being defined by the player, the computer defines who starts the game. Besides, when possible, the computer takes out the exact number of pieces to leave multiples of (m + 1). 
 

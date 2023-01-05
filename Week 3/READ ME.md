@@ -1,13 +1,13 @@
-## Terceira Semana​ :rocket: ##
+## Third Week​ :rocket: ##
 
 
 
-Nessa semana exercito as repetições.
+This portion is focused on repetitions.
 
 
 
-- **dígitos_adjacentes** - Recebe um número inteiro e informa se há pelo menos um dígito com um adjacente igual a ele;
-- **fatorial** - Calcula o fatorial de um número inteiro; 
-- **n_ímpares** - Retorna os primeiros _n_ (indicado na entrada) números impares;
-- **primalidade** - A partir da entrada de um número inteiro, determina se ele é primo ou não;
-- **soma_dígitos** - Recebe um número inteiro e soma todos os seus dígitos.
+- **AdjacentDigits** - Receives an integer and indicates if there is at least one digit that has an equal adjacent;
+- **Factorial** - Calculates the factorial of an input integer; 
+- **NOdd** - From an integer input, returns the first n odd numbers;
+- **Primality** - Utilizing an integer input indicates if it is a prime number;
+- **SumDigits** - From an integer input, sum all of its digits.

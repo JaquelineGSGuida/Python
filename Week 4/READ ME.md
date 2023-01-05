@@ -1,13 +1,13 @@
-## Quarta Semana​ :rocket: ##
+## Fourth Week​ :rocket: ##
 
 
 
-As funções são o foco nesse momento.
+This week, the main subject is functions.
 
 
 
-- **coeficiente_binomial** - Dadas as variáveis _n_ e _k_, o programa calcula o coeficiente binomial entre elas, ou seja, quantos grupos de _k_ cabem em _n_;
-- **fizzbuzz_função** - Versão do fizzbuzz anterior, entretanto em forma de função; 
-- **maior_primo** - Recebe um número maior ou igual a dois e retorna o maior número primo menor ou igual ao digitado;
-- **máximo_3** - A partir da entrada de três números, o programa indica se ele é primo ou não;
-- **vogais** - O usuário entra com uma letra e o código retorna _True_ se for vogal e _False_ se for consoante.
+- **BinomialCoefficient** - Given the variables n and k, the program calculates the binomial coefficient between them, in other words, how many groups of k fit in n;
+- **FizzbuzzFunction** - Version of the previous Fizzbuzz, although in form of a function; 
+- **GreaterPrime** - Receives an input number greater or equal to two and returns the greatest prime number less or equal to the input.
+- **MaxThree** - From three input numbers, indicates if they are prime numbers;
+- **Vowels** - The user inputs a letter and the program returns True if vowel and False if consonant.

@@ -1,13 +1,13 @@
-nota1=input("Digite a primeira nota: ")
-nota2=input("Digite a segunda nota: ")
-nota3=input("Digite a terceira nota: ")
-nota4=input("Digite a quarta nota: ")
+grade1=input("Enter the first grade: ")
+grade2=input("Enter the second grade: ")
+grade3=input("Enter the third grade: ")
+grade4=input("Enter the fourth grade: ")
 
-temp1=float(nota1)
-temp2=float(nota2)
-temp3=float(nota3)
-temp4=float(nota4)
+temp1=float(grade1)
+temp2=float(grade2)
+temp3=float(grade3)
+temp4=float(grade4)
 
-media=(temp1+temp2+temp3+temp4)/4
+average=(temp1+temp2+temp3+temp4)/4
 
-print("A média aritmética é",media)
+print("The arithmetic average is: ",average)

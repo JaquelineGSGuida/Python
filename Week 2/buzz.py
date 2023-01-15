@@ -1,8 +1,8 @@
-numero=int(input("Digite um número inteiro:"))
+number=int(input("Enter an integer:"))
 
-resto=numero%5
+remainder=number%5
 
-if resto == 0:
+if remainder == 0:
     print("Buzz")
 else:
-    print(numero)
+    print(number)

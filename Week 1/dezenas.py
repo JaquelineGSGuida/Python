@@ -1,7 +1,7 @@
-number=input("Digite um número inteiro: ")
+number=input("Enter an integer: ")
 
-temp=int(numero)
+temp=int(number)
 unity=temp//10
-dezena=unidade%10
+ten=unity%10
 
-print("O dígito das dezenas é",dezena)
+print("The tens digit is",ten)

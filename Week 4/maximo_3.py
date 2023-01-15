@@ -1,6 +1,9 @@
 import math
-
-def maximo (x,y,z):
+x=float(input("Enter a number:"))
+y=float(input("Enter another number:"))
+z=float(input("Enter one more number:"))
+print(max(x,y,z))
+def max (x,y,z):
     if x > y and x > z:
         return x
     if y > x and y > z:

@@ -1,15 +1,15 @@
 import math
 
-n=int(input("Digite o valor de n: "))
+n=int(input("Enter a value for n: "))
 
-anterior = 1
+previous = 1
 
 if n == 0:
     print (1)
 else:
     while n > 0:
-        fatorial = n*anterior
-        anterior = fatorial
+        factorial = n*previous
+        previous = factorial
         n = n-1
 
-    print(fatorial)
+    print(factorial)

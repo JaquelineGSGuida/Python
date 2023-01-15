@@ -1,13 +1,13 @@
-segundos=input("Por favor, entre com o número de segundos que deseja converter: ")
-temp=int(segundos)
+seconds=input("Please, enter the number of seconds you wish to convert: ")
+temp=int(seconds)
 
-dias=temp//86400
+days=temp//86400
 
-horas=(temp%86400)//3600
+hours=(temp%86400)//3600
 
-minutos=((temp%86400)%3600)//60
+minutes=((temp%86400)%3600)//60
 
-segundos=((temp%86400)%3600)%60
+seconds=((temp%86400)%3600)%60
 
-print(dias,"dias,",horas,"horas,",minutos,"minutos e",segundos,"segundos.")
+print(days,"days,",hours,"hours,",minutes,"minutes and",seconds,"seconds.")
 

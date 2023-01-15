@@ -1,13 +1,13 @@
 import math
 
-x1 = float(input("Digite a posição x do primeiro ponto:"))
-y1 = float(input("Digite a posição y do primeiro ponto:"))
-x2 = float(input("Digite a posição x do segundo ponto:"))
-y2 = float(input("Digite a posição y do segundo ponto:"))
+x1 = float(input("Enter the position x of the first point:"))
+y1 = float(input("Enter the position y of the first point:"))
+x2 = float(input("Enter the position x of the second point:"))
+y2 = float(input("Enter the position y of the second point:"))
 
 d= math.sqrt(((x1-x2)**2)+((y1-y2)**2))
 
 if d>=10:
-    print("longe")
+    print("far")
 else:
-    print("perto")
+    print("near")

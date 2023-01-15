@@ -1,6 +1,6 @@
 import math
 
-n = int(input("Digite o valor de n: "))
+n = int(input("Enter a value for n: "))
 
 i = 1
 

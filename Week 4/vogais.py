@@ -1,7 +1,9 @@
 
-
-def vogal(letra):
-    if letra == "a" or letra == "A" or letra == "e" or letra == "E" or letra == "i" or letra == "I" or letra == "o" or letra == "O" or letra == "u" or letra == "U":
+def vowel(letter):
+    if letter == "a" or letter == "A" or letter == "e" or letter == "E" or letter == "i" or letter == "I" or letter == "o" or letter == "O" or letter == "u" or letter == "U":
         return True
     else:
         return False
+
+inpLetter = (input("Enter a letter:"))
+print(vowel(inpLetter))

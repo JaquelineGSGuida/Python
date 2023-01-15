@@ -1,130 +1,131 @@
 import math
 
-# funcao de boas vindas e escolha de campeonato ou partida unica
+# Welcome function and choice of championship or unique game
 
-def campeonato():
-    print("Bem vindo ao jogo do NIM! Escolha:")
+def championship():
+    print("Welcome to NIM Game! Choose:")
     print("")
-    print("1 - para jogar uma partida isolada")
-    e = int(input("2 - para jogar um campeonato "))
+    print("1 - to play an unique game")
+    e = int(input("2 - to play a championship "))
     print("")
     scorePC = 0
-    scoreJogador = 0
+    scorePlayer = 0
 
     if e != 1 and e != 2:
-        print("Oops! Opção inválida! Tente de novo.")
+        print("Oops! Invalid option! Try again.")
         print("")
-        print("1 - para jogar uma partida isolada")
-        e = int(input("2 - para jogar um campeonato "))
+        print("1 - to play an unique game")
+        e = int(input("2 - to play a championship "))
         print("")
 
     if e == 1:
-        print("Você escolheu apenas uma partida!")
-        partida()
+        print("You chose an unique game!")
+        game()
 
     if e == 2:
-        print("Você escolheu um campeonato!")
+        print("You chose a championship!")
         print("")
-        print("**** Rodada 1 ****")
+        print("**** Game 1 ****")
 
-        r1 = partida()
-        if r1 == "Jogador":
-            scoreJogador = scoreJogador + 1
-        if r1 == "Computador":
+        r1 = game()
+        if r1 == "Player":
+            scorePlayer = scorePlayer + 1
+        if r1 == "Computer":
             scorePC = scorePC + 1
 
         print("")
-        print("**** Rodada 2 ****")
-        r2 = partida()
-        if r2 == "Jogador":
-            scoreJogador = scoreJogador + 1
-        if r2 == "Computador":
+        print("**** Game 2 ****")
+        r2 = game()
+        if r2 == "Player":
+            scorePlayer = scorePlayer + 1
+        if r2 == "Computer":
             scorePC = scorePC + 1
 
         print("")
-        print("**** Rodada 3 ****")
-        r3 = partida()
-        if r3 == "Jogador":
-            scoreJogador = scoreJogador + 1
-        if r3 == "Computador":
+        print("**** Game 3 ****")
+        r3 = game()
+        if r3 == "Player":
+            scorePlayer = scorePlayer + 1
+        if r3 == "Computer":
             scorePC = scorePC + 1
 
         print("")
-        print("**** Final do campeonato! ****")
+        print("**** End of Championship! ****")
         print("")
-        print("Placar: Você", scoreJogador, "X", scorePC, "Computador")
+        print("Points: You", scorePlayer, "X", scorePC, "Computer")
 
 
-# funcao para o usuário escolher o n de pecas e o maximo a ser retirado por jogada, entao o computador decide quem começa
+# Strategic function for the player to choose the number of pieces and the maximum amount to be taken out.
+# Then, the computer decides who starts the game.
 
-def partida ():
+def game ():
     print ("")
-    n = int(input("Quantas peças? "))
-    m = int(input("Limite de peças por jogada? "))
+    n = int(input("How many pieces in total? "))
+    m = int(input("Threshold of pieces to be taken out by turn? "))
     print("")
     if n % (m+1) == 0:
-        print ("Você começa!")
+        print ("You begin!")
         print("")
         while n>0:
-            n1 = usuario_escolhe_jogada(m, n)
+            n1 = user_chooses_turn(m, n)
             n = n - n1
             if n > 1:
-                print ("Agora restam", n, "peças no tabuleiro.")
+                print ("Now, there are ", n, " pieces on the board.")
                 print("")
             if n == 1:
-                print ("Agora resta apenas uma peça no tabuleiro.")
+                print ("Now, there is only one piece on the board.")
                 print("")
             if n == 0:
-                print ("Fim do jogo! Você ganhou!")
-                return "Jogador"
+                print ("Game Over! You win!")
+                return "Player"
 
             if n > 0:
-                n2 = computador_escolhe_jogada(m, n)
+                n2 = computer_chooses_turn(m, n)
                 n= n - n2
                 if n > 1:
-                    print ("Agora restam", n, "peças no tabuleiro.")
+                    print ("Now, there are ", n, " pieces on the board.")
                     print("")
                 if n == 1:
-                    print ("Agora resta apenas uma peça no tabuleiro.")
+                    print ("Now, there is only one piece on the board.")
                     print("")
                 if n == 0:
-                    print ("Fim do jogo! O computador ganhou!")
-                    return "Computador"
+                    print ("Game Over! The computer wins!")
+                    return "Computer"
 
 
     else:
-        print("Computador começa!")
+        print("The computer begins!")
         print("")
         while n>0:
-            n1 = computador_escolhe_jogada(m, n)
+            n1 = computer_chooses_turn(m, n)
             n = n - n1
             if n > 1:
-                print ("Agora restam",n, "peças no tabuleiro.")
+                print ("Now, there are ", n, " pieces on the board.")
                 print("")
             if n == 1:
-                print ("Agora resta apenas uma peça no tabuleiro.")
+                print ("Now, there is only one piece on the board.")
                 print("")
             if n == 0:
-                print ("Fim do jogo! O computador ganhou!")
-                return "Computador"
+                print ("Game Over! The computer wins!")
+                return "Computer"
 
             if n>0:
-                n2 = usuario_escolhe_jogada(m, n)
+                n2 = user_chooses_turn(m, n)
                 n = n - n2
                 if n > 1:
-                    print ("Agora restam",n, "peças no tabuleiro.")
+                    print ("Now, there are ", n, " pieces on the board.")
                     print("")
                 if n == 1:
-                    print ("Agora resta apenas uma peça no tabuleiro.")
+                    print ("Now, there is only one piece on the board.")
                     print("")
                 if n == 0:
-                    print ("Fim do jogo! Você ganhou!")
-                    return "Jogador"
+                    print ("Game Over! You win!")
+                    return "Player"
 
 
-# funcao em que o computador joga
+# Computer's turn function
 
-def computador_escolhe_jogada(m,n):
+def computer_chooses_turn(m,n):
     if n % (m+1) != 0:
         x = 0
         while n % (m+1) != 0 and x < m and n > 0:
@@ -139,29 +140,28 @@ def computador_escolhe_jogada(m,n):
             x = x + 1
 
     if x == 1:
-        print ("O computador tirou uma peça.")
+        print ("The computer took one piece out.")
     else:
-        print ("O computador tirou", x , "peças.")
+        print ("The computer took ", x , "pieces out.")
     return x
 
+# Player's turn function
 
-# funcao em que o jogador joga
-
-def usuario_escolhe_jogada(m,n):
-    a = int (input("Quantas peças você vai tirar? "))
+def user_chooses_turn(m,n):
+    a = int (input("How many pieces are you going to take out? "))
 
     while a > m or a > n or a <=0:
         print("")
-        print("Oops! Jogada inválida! Tente de novo.")
+        print("Oops! Invalid play attempt! Try again.")
         print("")
-        a = int(input("Quantas peças você vai tirar? "))
+        a = int(input("How many pieces are you going to take out? "))
 
     if a == 1:
         print("")
-        print ("Você tirou uma peça.")
+        print ("You took out one piece.")
     else:
         print("")
-        print ("Você tirou ", a , "peças.")
+        print ("You took out ", a , "pieces.")
     return a
 
-campeonato()
+championship()

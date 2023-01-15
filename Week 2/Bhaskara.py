@@ -1,24 +1,24 @@
 import math
 
-a=float(input("Considerando o modelo de equação: ax²+bx+c, digite o valor de a:"))
-b=float(input("Agora digite o valor de b:"))
-c=float(input("Por fim, digite o valor de c:"))
+a=float(input("Considering the equation model: ax²+bx+c, enter the value of a:"))
+b=float(input("Now enter the value of b:"))
+c=float(input("Lastly, enter the value of c:"))
 
 delta = (b**2)-4*a*c
 
 if delta < 0:
-    print("esta equação não possui raízes reais")
+    print("this equation does not have real roots.")
 
 if delta==0:
     x= (-b + math.sqrt(delta))/(2*a)
-    print("a raiz desta equação é",x)
+    print("the equation's root is: ",x)
 
 if delta > 0:
     x = (-b + math.sqrt(delta)) / (2 * a)
     y = (-b - math.sqrt(delta)) / (2 * a)
 
     if x<y:
-        print("as raízes da equação são", x, "e", y)
+        print("the equation's roots are", x, "and", y)
     else:
-        print("as raízes da equação são", y, "e", x)
+        print("the equation's roots are", y, "and", x)
 

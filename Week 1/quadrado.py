@@ -1,5 +1,5 @@
-lado=input("Digite o valor correspondente ao lado de um quadrado: ")
-temp=int(lado)
+side=input("Enter the value of the square side: ")
+temp=int(side)
 p=temp*4
 a=temp**2
-print("perímetro:",p,"- área:",a)
+print("perimeter:",p,"- area:",a)

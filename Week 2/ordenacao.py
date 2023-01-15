@@ -1,9 +1,9 @@
-a=float(input("Digite um número:"))
-b=float(input("Digite outro um número:"))
-c=float(input("Digite mais um número:"))
+a=float(input("Enter a number:"))
+b=float(input("Enter another number:"))
+c=float(input("Enter one more number:"))
 
 
 if a<b<c:
-    print("crescente")
+    print("ascendent")
 else:
-    print("não estão em ordem crescente")
+    print("are not ascendent")

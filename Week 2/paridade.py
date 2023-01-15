@@ -1,8 +1,8 @@
-numero=float(input("Digite um número:"))
+number=float(input("Enter a number:"))
 
-resto=numero%2
+remainder=number%2
 
-if resto == 0:
-    print("par")
+if remainder == 0:
+    print("even")
 else:
-    print("ímpar")
+    print("odd")

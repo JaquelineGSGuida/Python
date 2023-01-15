@@ -1,13 +1,13 @@
-numero=int(input("Digite um número inteiro:"))
+number=int(input("Enter an integer:"))
 
-resto=numero%3
+remainder=number%3
 
-if resto != 0:
-    print(numero)
+if remainder != 0:
+    print(number)
 else:
-    resto=numero%5
+    remainder=number%5
 
-if resto==0:
+if remainder==0:
     print("FizzBuzz")
 else:
-    print(numero)
+    print(number)

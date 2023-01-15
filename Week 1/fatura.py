@@ -1,7 +1,7 @@
-nome=input("Digite o nome do cliente: ")
-dia=input("Digite o dia de vencimento: ")
-mes=input("Digite o mês de vencimento: ")
-valor=input("Digite o valor da fatura: ")
+name=input("Enter the Client's name: ")
+day=input("Enter the due Day: ")
+month=input("Enter the due Month: ")
+amount=input("Enter the bill's amount: ")
 
-print("Olá,",nome)
-print("A sua fatura com vencimento em",dia,"de",mes,"no valor de R$", valor,"está fechada.")
+print("Hello,",name)
+print("Your bill of due date",month, day,", which value is $", amount,"is closed.")

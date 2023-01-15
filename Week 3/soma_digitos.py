@@ -1,12 +1,12 @@
 import math
 
-n = int(input("Digite um número inteiro: "))
+n = int(input("Enter an integer: "))
 
-parcela = 0
+parcel = 0
 
 while n > 0:
-   parcela = parcela + (n % 10)
+   parcel = parcel + (n % 10)
    n = n // 10
 
 
-print (parcela)
+print (parcel)
